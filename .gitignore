@@ -1,0 +1,27 @@
+# Maven target
+/target/
+
+# Eclipse/IntelliJ/VSCode IDE files
+*.iml
+.idea/
+*.classpath
+*.project
+*.settings/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Screenshots
+/screenshots/
+
+# Reports
+/selenium-demo/target/surefire-reports/
+/selenium-demo/target/cucumber-reports/
+
+# Java build
+*.class
