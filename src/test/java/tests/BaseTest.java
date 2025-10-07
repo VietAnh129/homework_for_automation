@@ -23,13 +23,15 @@ public class BaseTest {
     // @Parameters("browser")
     @BeforeMethod
     public void setup(@Optional("chrome") String browser) {
-        if (browser.equalsIgnoreCase("firefox")) {
-            WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
-        } else {
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
-        }
+    String browserName = System.getProperty("browser", browser);
+
+    if (browserName.equalsIgnoreCase("firefox")) {
+        WebDriverManager.firefoxdriver().setup();
+        driver = new FirefoxDriver();
+    } else {
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+    }
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().window().maximize();
