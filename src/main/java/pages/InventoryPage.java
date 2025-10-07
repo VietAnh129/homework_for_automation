@@ -7,7 +7,6 @@ public class InventoryPage {
     WebDriver driver;
     By addToCart = By.id("add-to-cart-sauce-labs-backpack");
     By cartIcon = By.className("shopping_cart_link");
-    By numItem = By.className("shopping_cart_badge");
 
     public InventoryPage(WebDriver driver) {
         this.driver = driver;
