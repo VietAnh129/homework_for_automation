@@ -20,7 +20,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
     protected WebDriver driver;
 
-    // @Parameters("browser")
     @BeforeMethod
     public void setup(@Optional("chrome") String browser) {
     String browserName = System.getProperty("browser", browser);
