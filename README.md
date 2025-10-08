@@ -6,7 +6,10 @@
 - TestNG
 - Maven
 - Parallel execution on Chrome & Firefox
-- GitHub Actions CI integration
+
+## CI Integration
+Currently, the project supports local execution only.
+CI integration (GitHub Actions) can be easily added in future versions.
 
 ## Test Scenarios
 1. **Login flow**
